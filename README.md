@@ -5,4 +5,4 @@ This project is a Retrieval-Augmented Generation system powered by Google Gemini
 ## Features
 - Upload PDF textbooks.
 - Long-context analysis using Gemini 1.5 Pro.
-- Secure API key management.
+- Secure API key management.# neuro_rag_system
