@@ -1,8 +1,18 @@
-# Neurophysiology RAG System
+# Neurophysiology RAG System 🧠
 
-This project is a Retrieval-Augmented Generation system powered by Google Gemini 1.5 Pro. It allows users to upload Neurophysiology textbooks and query them using natural language.
+A Retrieval-Augmented Generation system built with Python and Gemini 1.5. This tool allows users to upload Neurophysiology textbooks (PDFs) and ask complex medical questions, receiving answers grounded strictly in the source text.
 
-## Features
-- Upload PDF textbooks.
-- Long-context analysis using Gemini 1.5 Pro.
-- Secure API key management.# neuro_rag_system
+**Last Updated:** ## Features
+* **Multi-Book Support:** Upload multiple PDFs into the context window.
+* **Long Context:** Leverages Gemini 1.5's 1M+ token window to read entire books.
+* **Secure:** Environment variable management for API keys.
+
+## Setup
+1.  Install `uv`: `curl -LsSf https://astral.sh/uv/install.sh | sh`
+2.  Install dependencies: `uv pip install google-generativeai python-dotenv rich`
+3.  Create `.env` file and add `GOOGLE_API_KEY=...`
+
+## Usage
+Run the system:
+```bash
+python rag_system.py
